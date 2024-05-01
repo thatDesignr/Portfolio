@@ -214,7 +214,7 @@
 
 .project button:hover {
     background-color: #4886FF;
-    color: #6C6C6C;
+    color: #fff;
 }
 
 .buttons-top {
@@ -237,14 +237,14 @@
 .ButtonAllProjects button{
     border: 1px solid #EDEDED;
     display: flex;
-    padding-left: 20px;
+
     padding-right: 30px;
     margin-left:10px;
     border-radius: 50px;
     text-decoration: none;
     height: 44px;
 
-    width: 171px;
+    width: 200px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -285,24 +285,25 @@
   /* Text Animation */
 
  
-  .stock-ticker {
+  .wordsslider {
     font-size: 15px;
     padding-block: 8px;
-    border-block: 1px solid;
+    padding-top:77px;
+    padding-bottom:77px;
     overflow: hidden;
     user-select: none;
   
-    --gap: 20px;
+    --gap: 44px;
     display: flex;
     gap: var(--gap);
   }
   
-  .stock-ticker ul {
+  .wordsslider ul {
     list-style: none;
     flex-shrink: 0;
     min-width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: var(--gap);
   
@@ -317,13 +318,62 @@
   }
 
   
-  .stock-ticker .words,
-  .stock-ticker .price {
+  .wordsslider .words,
+  .wordsslider .price {
     font-weight: 800;
     font-size: 111px;
     color: #000;
   }
 
+  .wordsslider li span::before {
+    content: "";
+    width: 35px; /* Adjust as needed */
+    height: 35px; /* Adjust as needed */
+    background-color: #2E75FF; /* change color here */
+    border-radius: 50%; /* Makes it round */
+    display: inline-block;
+    position: relative;
+    left: -22px;
+    top: 80%;
+    transform: translateY(-50%);
+}
+
+.wordsslider li {
+  margin: 0 0px; /* Adjust as needed */
+}
+
+#branding{
+  margin: 0 -19px 0px 0px!important; 
+}
+
+/*Learning Outcomes*/
+
+.learningoutcome{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+  border: 1px solid #F0F0F0;
+  width: 400px;
+  padding: 20px 20px 20px 5px;
+  background-image: url("data:image/svg+xml,%3Csvg width='21' height='21' viewBox='0 0 21 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.409912 1.69727H19.5222V20.8096' stroke='black' stroke-width='2'/%3E%3Cpath d='M19.4542 1.84766L1.91784 19.3842' stroke='black' stroke-width='2'/%3E%3C/svg%3E%0A");;
+  background-repeat: no-repeat;
+  background-position: 95% 15%;
   
+  
+}
+
+h3{
+  margin: 0px !important;
+  padding: 0px !important;
+}
+  
+.learningoutcome p{
+  margin: 0px !important;
+  padding: 5px 0px 0px 0px !important;
+  max-width: 300px;
+}
+
 
   
