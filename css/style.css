@@ -167,7 +167,7 @@
     display: flex;
     flex-direction: column;
 }
-.project{
+.project {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -175,6 +175,14 @@
     height: 120px;
     padding-left: 50px;
     padding-right: 50px;
+    background: linear-gradient(to bottom, #2E75FF, #2E75FF) no-repeat;
+    background-size: 100% 0;
+    background-color: #ffffff;
+    transition: background-size 0.3s ease;
+}
+
+.project:hover {
+    background-size: 100% 100%;
 }
 
 
@@ -184,7 +192,7 @@
 }
 
 .project button {
-    background-color: #fff;
+    background-color: transparent;
     color: #6C6C6C;
     border: none;
     margin: 0px;
@@ -192,12 +200,17 @@
     font-family: "IBM Plex Mono", monospace;
     font-weight: 400;
     border-radius: 50px;
-    font-size: 17px; /* Reset the font size here */
+    font-size: 17px;
     text-align: right;
+    transition: color 0.3s ease; /* Add this */
+}
+
+.project:hover button {
+    color: #fff;
 }
 
 .project button:hover {
-    background-color: #F7F7F7;
+    background-color: #4886FF;
     color: #6C6C6C;
 }
 
@@ -218,3 +231,31 @@
 
 }
 
+.ButtonAllProjects button{
+    border: 1px solid #EDEDED;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 30px;
+    margin-left:10px;
+    border-radius: 50px;
+    text-decoration: none;
+    height: 44px;
+
+    width: 171px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #6C6C6C !important;
+    text-decoration: none;
+    background-color: #fff;
+    font-family: "IBM Plex Mono", monospace;
+    background-image: url("data:image/svg+xml,%3Csvg width='25' height='8' viewBox='0 0 25 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.4541 3.33667C1.17796 3.33667 0.954102 3.56053 0.954102 3.83667C0.954102 4.11281 1.17796 4.33667 1.4541 4.33667V3.33667ZM24.5911 4.19022C24.7864 3.99496 24.7864 3.67838 24.5911 3.48312L21.4091 0.301136C21.2139 0.105874 20.8973 0.105874 20.702 0.301136C20.5068 0.496398 20.5068 0.812981 20.702 1.00824L23.5304 3.83667L20.702 6.6651C20.5068 6.86036 20.5068 7.17694 20.702 7.3722C20.8973 7.56747 21.2139 7.56747 21.4091 7.3722L24.5911 4.19022ZM1.4541 4.33667H24.2375V3.33667H1.4541V4.33667Z' fill='%236C6C6C'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: 88% 50%;
+}
+
+.ButtonAllProjects{
+    padding-left: 40px;
+    margin: 0;
+    padding-top: 30px;
+}
