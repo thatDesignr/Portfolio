@@ -3,7 +3,9 @@
   font-weight: 100;
   font-style: normal;
 }
-
+body,html{
+  overflow-x:hidden;
+}
 .ibm-plex-mono-extralight {
   font-family: "IBM Plex Mono", monospace;
   font-weight: 200;
@@ -319,6 +321,53 @@ span {
 }
 
 
+.wrapperlearningoutcomes-slider {
+  width: 100%;
+  cursor: -webkit-grab;
+  cursor: grab;
+  display: flex;
+}
+.wrapperlearningoutcomes-slider.dragging {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+.inner__wrap {
+  display: flex;
+  width: 100%;
+}
+
+.carousel--progress {
+  position: absolute;
+  height: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  border-radius: 5px;
+  background: rgba(0,0,0,0.1);
+  left: 45px;
+  width: calc(100% - 90px);
+  top:auto;
+  bottom:15px;
+  overflow:hidden;
+}
+.wrapperlearningoutcomes-slider{
+  position: relative;
+}
+.carousel--progress-bar {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background: #2E75FF;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transform-origin: 0% 0%;
+}
+
+
 @keyframes scroll {
   to {
     transform: translateX(calc(-100% - var(--gap)));
@@ -359,8 +408,12 @@ span {
   margin: 0 -19px 0px 0px !important;
 }
 
-/*Learning Outcomes*/
-
+.slide{
+  padding:0px 45px;
+}
+.wrapperlearningoutcomes-slider{
+  padding-bottom: 40px;
+}
 .learningoutcome {
   display: flex;
   flex-direction: column;
@@ -374,8 +427,10 @@ span {
   ;
   background-repeat: no-repeat;
   background-position: 95% 15%;
-
-
+  min-width: 400px;
+  max-width: 400px;
+  padding-left: 15px;
+  /*margin:0px 45px;*/
 }
 
 h3 {
@@ -512,7 +567,6 @@ h3 {
 .container .blobs .blob.c {
   animation: circular 60s linear infinite;
 }
-
 @keyframes circular {
   0% {
     transform: translate(0, -150px);
