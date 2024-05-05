@@ -10,7 +10,7 @@ body{
 
 .wrapperlearningoutcomes-mobile-and-tablet{
   display: flex;
-  width: 100%;
+  width: 106%;
 }
 
 .slide-mobile-and-tablet{
@@ -30,7 +30,7 @@ body{
   background-image: url("data:image/svg+xml,%3Csvg width='21' height='21' viewBox='0 0 21 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.409912 1.69727H19.5222V20.8096' stroke='black' stroke-width='2'/%3E%3Cpath d='M19.4542 1.84766L1.91784 19.3842' stroke='black' stroke-width='2'/%3E%3C/svg%3E%0A");
   ;
   background-repeat: no-repeat;
-  background-position: 95% 15%;
+  background-position: 98% 15%;
   min-width: 400px;
   max-width: 400px;
   padding-left: 15px;
@@ -516,15 +516,18 @@ h3 {
 .containerwrapperblobs{
   background-color: #000;
 margin-top:90px;
+height: 55vw;
+max-height: 800px;
 }
 
 .contact {
-  height: 70vh;
+  height: 55vw;
   display: flex;
   flex-direction: column;
   background-color: transparent;
   display: flex;
   z-index: 1;
+  max-height: 800px;
 
 }
 
@@ -544,7 +547,7 @@ margin-top:90px;
 .contacttext h1 {
   padding: 0px;
   margin: 0px;
-  font-size: 15vw;
+  font-size: 13vw;
 }
 
 .ButtonContact button {
@@ -581,21 +584,23 @@ margin-top:90px;
 .container {
   background: transparent;
   width: 100%;
-  height: 70vh;
+  height: 55vw;
   overflow: hidden;
   position: relative;
+  max-height: 800px;
 }
 
 .container:after {
   content: '';
   width: 100%;
-  height: 70vh;
+  height: 55vw;
   background: url("https://i.imgur.com/PsjPzdO.png");
   background-size: 200px;
   mix-blend-mode: overlay;
   position: absolute;
   top: 0;
   left: 0;
+  max-height: 800px;
 }
 
 .container .blobs {
@@ -778,6 +783,28 @@ margin-top:90px;
     .FeaturedProjects ul{
       padding-left: 10px;
     }
+
+    .ButtonContact button{
+      width: 100%;
+    max-width: 300px;
+    min-width: 300px;
+    }
+
+    .ButtonContact {
+      display: flex;
+      justify-content: center;
+      height: 200px;
+      padding-top: 55px;
+      padding-right: 0px;
+      text-align: center;
+    }
+    .contacttext{
+      height: 400px !important;
+      max-height: 400px !important;
+      justify-content: center;
+      align-items: center;
+      padding: 0px;
+    }
 }
 
 @media screen and (max-width: 1080px){
@@ -797,11 +824,12 @@ margin-top:90px;
     } 
 }
 
-@media screen and (max-width: 722px) {
+@media screen and (max-width: 1080px) {
 .wrapperlearningoutcomes-mobile-and-tablet{
   display: block;
 }
 .slide-mobile-and-tablet{
   padding-top: 10px;
+  width: 100% !important;
 }
 }
