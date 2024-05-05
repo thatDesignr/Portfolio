@@ -1,8 +1,8 @@
 $(document).ready(function(){
-	const lerp = (f0, f1, t) => (1 - t) * f0 + t * f1
-const clamp = (val, min, max) => Math.max(min, Math.min(val, max))
+  const lerp = (f0, f1, t) => (1 - t) * f0 + t * f1
+  const clamp = (val, min, max) => Math.max(min, Math.min(val, max))
 
-class DragScroll {
+  class DragScroll {
   constructor(obj) {
     this.$el = document.querySelector(obj.el)
     this.$wrap = this.$el.querySelector(obj.wrap)
@@ -46,9 +46,10 @@ class DragScroll {
   }
   
   handleWheel(e) {
-    this.progress += e.deltaY
-    this.move()
-  }
+    e.preventDefault();
+    this.progress += e.deltaY * 2.5;
+    this.move();
+}
   
   handleTouchStart(e) {
     e.preventDefault()
@@ -75,18 +76,16 @@ class DragScroll {
   }
   
   events() {
-    // window.addEventListener('resize', this.calculate)
-    // window.addEventListener('wheel', this.handleWheel)
-    //
-    this.$el.addEventListener('touchstart', this.handleTouchStart)
-    window.addEventListener('touchmove', this.handleTouchMove)
-    window.addEventListener('touchend', this.handleTouchEnd)
-    //
-    window.addEventListener('mousedown', this.handleTouchStart)
-    window.addEventListener('mousemove', this.handleTouchMove)
-    window.addEventListener('mouseup', this.handleTouchEnd)
-    document.body.addEventListener('mouseleave', this.handleTouchEnd)
-  }
+    this.$el.addEventListener('wheel', this.handleWheel);
+    // remove touch and mouse events related to dragging
+    // this.$el.addEventListener('touchstart', this.handleTouchStart)
+    // window.addEventListener('touchmove', this.handleTouchMove)
+    // window.addEventListener('touchend', this.handleTouchEnd)
+    // window.addEventListener('mousedown', this.handleTouchStart)
+    // window.addEventListener('mousemove', this.handleTouchMove)
+    // window.addEventListener('mouseup', this.handleTouchEnd)
+    // document.body.addEventListener('mouseleave', this.handleTouchEnd)
+}
   
   raf() {
     // requestAnimationFrame(this.raf)
@@ -117,7 +116,9 @@ const scroll = new DragScroll({
   wrap: '.inner__wrap',
   item: '.slide',
   bar: '.carousel--progress-bar',
-})
+});
+
+
 
 
 /*--------------------

@@ -324,8 +324,9 @@ span {
 .wrapperlearningoutcomes-slider {
   width: 100%;
   cursor: -webkit-grab;
-  cursor: grab;
+  cursor: default;
   display: flex;
+
 }
 .wrapperlearningoutcomes-slider.dragging {
   cursor: -webkit-grabbing;
@@ -349,6 +350,7 @@ span {
   top:auto;
   bottom:15px;
   overflow:hidden;
+
 }
 .wrapperlearningoutcomes-slider{
   position: relative;
@@ -450,7 +452,7 @@ h3 {
 
 .containerwrapperblobs{
   background-color: #000;
-
+margin-top:90px;
 }
 
 .contact {
@@ -609,4 +611,9 @@ h3 {
   100% {
     transform: translate(0, 150px);
   }
+}
+
+.wrapperlearningoutcomes-slider a{
+  text-decoration: none;
+  color: inherit;
 }
