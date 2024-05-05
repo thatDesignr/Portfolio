@@ -1,20 +1,4 @@
-@media screen and (max-width: 699px) {
-  nav {
-    display: none !important;
 
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 20px 15px 20px;
-    }
-  }
-
-
-@media screen and (min-width: 699px) {
-  .nav-mobile {
-    display: none  !important;
-    }
-  
-}
 .nav-mobile{
   display: flex;
   justify-content: space-between;
@@ -684,4 +668,29 @@ margin-top:90px;
   right: -3px;
   font-size: 36px;
   margin-left: 50px;
+}
+
+@media screen and (max-width: 699px) {
+  nav {
+    display: none !important;
+
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px 15px 20px;
+    }
+    .hero h1 {
+      font-size: 9vw;
+      font-weight: 700;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+
+@media screen and (min-width: 699px) {
+  .nav-mobile {
+    display: none  !important;
+    }
+
+  
 }
