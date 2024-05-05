@@ -46,9 +46,9 @@ $(document).ready(function(){
   }
   
   handleWheel(e) {
-    e.preventDefault();
-    this.progress += e.deltaY * 2.5;
-    this.move();
+    e.preventDefault(); // Prevents the default action of the event
+    this.progress += e.deltaY * 2.5; // Increases the progress property by the vertical scroll amount times 2.5
+    this.move(); // Calls the move method
 }
   
   handleTouchStart(e) {
