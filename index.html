@@ -16,6 +16,20 @@
 </head>
 
 <body>
+    <script>
+        $(document).ready(function() {
+           $('a[href^="#"]').on('click', function(event) {
+              var target = $(this.getAttribute('href'));
+              console.log(target); // Debugging line
+              if (target.length) {
+                 event.preventDefault();
+                 $('html, body').stop().animate({
+                    scrollTop: target.offset().top
+                 }, 13000);
+              }
+           });
+        });
+        </script>
     <nav>
         <a href="index.html"><img src="/img/Logo Studio Louis.svg" alt="logo"></a>
         <ul>
@@ -300,7 +314,7 @@
     </div>
 <div class="containerwrapperblobs">
 <div class="container">
-    <div class="contact">
+    <div class="contact" id="Contact">
         <a href="mailto:louisgores@student.fontys.nl"><div class="ButtonContact">
            <button style="z-index: 100; cursor: pointer;">louisgores@student.fontys.nl</button>
         </div>
