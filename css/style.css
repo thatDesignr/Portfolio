@@ -978,3 +978,55 @@ max-height: 800px;
   color: white;
   z-index: 10222222 !important;
 }
+
+.single-learningoutcome p{
+  color: #6C6C6C;
+  text-align: justify;
+  line-height: 30px;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.single-learningoutcome h4{
+  font-size: 18px;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+
+.single-learningoutcome{
+  background-color: #F6F9FF;
+  margin: 50px 50px 0px 50px;
+  width: 900px;
+  padding: 29px 50px 50px 50px;
+  border-radius:  19px;
+}
+
+.learningoutcomebutton{
+
+  display: flex;
+font-size: 16px;
+  padding-right: 30px;
+margin-top: 20px;
+margin-bottom: 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  height: 54px;
+border: none;
+  width: 344px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #2E75FF !important;
+  text-decoration: none;
+  background-color: #fff;
+  font-family: "IBM Plex Mono", monospace;
+  background-image: url("data:image/svg+xml,%3Csvg width='19' height='18' viewBox='0 0 19 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.21289 18C1.66289 18 1.19206 17.8042 0.800391 17.4125C0.408724 17.0208 0.212891 16.55 0.212891 16V2C0.212891 1.45 0.408724 0.979167 0.800391 0.5875C1.19206 0.195833 1.66289 0 2.21289 0H9.21289V2H2.21289V16H16.2129V9H18.2129V16C18.2129 16.55 18.0171 17.0208 17.6254 17.4125C17.2337 17.8042 16.7629 18 16.2129 18H2.21289ZM6.91289 12.7L5.51289 11.3L14.8129 2H11.2129V0H18.2129V7H16.2129V3.4L6.91289 12.7Z' fill='%232E75FF'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: 92% 50%;
+}
+
+.single-learningoutcome img{
+width: 100%;
+}

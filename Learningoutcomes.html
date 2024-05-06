@@ -24,71 +24,79 @@
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
-<div class="hero">
-    <div class="containerhero">
-        <h1>Learning Outcomes</h1>
-        
+    <div class="hero">
+        <div class="containerhero">
+            <h1>Learning Outcomes</h1>
+
+        </div>
+
     </div>
 
-</div> 
+    <div class="learningoutcomewrapper">
+        <script>function openNav() {
+                document.getElementById("mySidenav").style.width = "333px";
+            }
 
-<div class="learningoutcomewrapper">
-    <script>function openNav() {
-        document.getElementById("mySidenav").style.width = "333px";
-      }
-      
-      function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-      }</script>
-    <div class="nav-mobile">
-        <img src="/img/Logo Studio Louis.svg" alt="logo">
-        <img src="/img/hamburgermenu.svg" alt="logo" onclick="openNav()">
-      </div>
-      
-      <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">Learning Outcomes</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact Me</a>
-      </div>
-    
-      <div class="dropdown__box">
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }</script>
+        <div class="nav-mobile">
+            <img src="/img/Logo Studio Louis.svg" alt="logo">
+            <img src="/img/hamburgermenu.svg" alt="logo" onclick="openNav()">
+        </div>
 
-        <div class="regular__dropdown">
-            <a href="#">
-            <span>Interactive Media Products</span>
-            <svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1.21289 1L7.71289 8L14.2129 1" stroke="white" stroke-width="2"/>
-                </svg>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Learning Outcomes</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact Me</a>
+        </div>
+
+        <div class="dropdown__box">
+
+            <div class="regular__dropdown">
+                <a href="#">
+                    <span>Interactive Media Products</span>
+                    <svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.21289 1L7.71289 8L14.2129 1" stroke="white" stroke-width="2" />
+                    </svg>
                 </a>
-            <div class="dropdown" style="display:none;">
-                <ul>
-                    <li><a href="#" data-id="id1">Binance</a></li>
-                    <li><a href="#" data-id="id2">BitMex</a></li>
-                    <li><a href="#" data-id="id3">KuCoin</a></li>
-                    <li><a href="#" data-id="id4">ByBit</a></li>
-                    <li><a href="#" data-id="id5">Phemex</a></li>
-                </ul>
+                <div class="dropdown" style="display:none;">
+                    <ul>
+                        <li><a href="#" data-id="id1">Development and Version Control</a></li>
+                        <li><a href="#" data-id="id2">Iterative Design</a></li>
+                        <li><a href="#" data-id="id3">Professional Standard</a></li>
+                        <li><a href="#" data-id="id4">Personal Leadership</a></li>
+
+                    </ul>
+                </div>
             </div>
         </div>
-      </div>
-    
-      <script>
-        document.querySelector('.regular__dropdown > a').addEventListener('click', function(event) {
-    event.preventDefault();
-    var dropdownContent = this.nextElementSibling;
-    if (dropdownContent.style.display === 'none' || dropdownContent.style.display === '') {
-        dropdownContent.style.display = 'block';
-        this.classList.add('opened');
-    } else {
-        dropdownContent.style.display = 'none';
-        this.classList.remove('opened');
-    }
-});
-      </script>
 
-</div>
+        <script>
+            document.querySelector('.regular__dropdown > a').addEventListener('click', function (event) {
+                event.preventDefault();
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === 'none' || dropdownContent.style.display === '') {
+                    dropdownContent.style.display = 'block';
+                    this.classList.add('opened');
+                } else {
+                    dropdownContent.style.display = 'none';
+                    this.classList.remove('opened');
+                }
+            });
+        </script>
+
+        <div class="single-learningoutcome">
+            <h4>New Marktplaast.nl UI/UX</h4>
+            <p>In semester 2 I have made interactive media products that I have made with the program Figma. For example, I made a UI/UX overhaul of Marktplaats.nl</p>
+            <button class="learningoutcomebutton">View Marktplaats.nl UI/UX
+            </button>
+            <img src="/img/Marktplaats Homepage Re-design 1.png" alt="Marktplaats.nl UI/UX">
+        </div>
+    </div>
 
 
-  <script src="js/script.js" defer></script>
+
+    <script src="js/script.js" defer></script>
 </body>
