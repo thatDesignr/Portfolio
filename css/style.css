@@ -1078,4 +1078,56 @@ overflow: hidden;
 .development-and-version-control-child img {
   width: 100%;
   height: auto;
+  max-width: 100%;
+}
+
+.wrapper-logo-iterations-top{
+  display: flex;
+  font-size: 14px;
+  margin-top:-20px;
+}
+
+.logo-iteration {
+  padding: 1%;
+  flex-direction: column;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex: 1; /* Add this line */
+}
+
+.wrapper-logo-iterations-bottom{
+  display: flex;
+}
+
+.wrapper-logo-iterations-bottom p{
+
+  font-size: 14px !important;
+  font-weight: 500;
+}
+
+.wrapper-logo-iterations-top h4{
+
+  font-size: 14px !important;
+  margin-top:-10px;
+
+}
+
+.poster-wrapper{
+  display: flex;
+  flex: 1;
+}
+
+.poster img {
+  width: 100%;
+  height: auto;
+}
+
+.poster {
+  flex: 1;
+}
+
+.poster p{
+  font-size: 14px;
+  max-width: 90%;
 }
