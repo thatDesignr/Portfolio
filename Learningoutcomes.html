@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <img src="/img/Logo Studio Louis.svg" alt="logo">
+        <ul>
+            <li><a href="#">Learning Outcomes</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+<div class="hero">
+    <div class="containerhero">
+        <h1>Learning Outcomes</h1>
+        
+    </div>
+
+</div> 
+
+<div class="learningoutcomewrapper">
+    <script>function openNav() {
+        document.getElementById("mySidenav").style.width = "333px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }</script>
+    <div class="nav-mobile">
+        <img src="/img/Logo Studio Louis.svg" alt="logo">
+        <img src="/img/hamburgermenu.svg" alt="logo" onclick="openNav()">
+      </div>
+      
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Learning Outcomes</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact Me</a>
+      </div>
+    
+      <div class="dropdown__box">
+
+        <div class="regular__dropdown">
+            <a href="#">
+            <span>Interactive Media Products</span>
+            <svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.21289 1L7.71289 8L14.2129 1" stroke="white" stroke-width="2"/>
+                </svg>
+                </a>
+            <div class="dropdown" style="display:none;">
+                <ul>
+                    <li><a href="#" data-id="id1">Binance</a></li>
+                    <li><a href="#" data-id="id2">BitMex</a></li>
+                    <li><a href="#" data-id="id3">KuCoin</a></li>
+                    <li><a href="#" data-id="id4">ByBit</a></li>
+                    <li><a href="#" data-id="id5">Phemex</a></li>
+                </ul>
+            </div>
+        </div>
+      </div>
+    
+      <script>
+        document.querySelector('.regular__dropdown > a').addEventListener('click', function(event) {
+    event.preventDefault();
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === 'none' || dropdownContent.style.display === '') {
+        dropdownContent.style.display = 'block';
+        this.classList.add('opened');
+    } else {
+        dropdownContent.style.display = 'none';
+        this.classList.remove('opened');
+    }
+});
+      </script>
+
+</div>
+
+
+  <script src="js/script.js" defer></script>
+</body>
