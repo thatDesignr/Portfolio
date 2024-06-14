@@ -17,37 +17,33 @@
 
 <body>
     <script>
-        $(document).ready(function() {
-           $('a[href^="#"]').on('click', function(event) {
-              var target = $(this.getAttribute('href'));
-              console.log(target); // Debugging line
-              if (target.length) {
-                 event.preventDefault();
-                 $('html, body').stop().animate({
-                    scrollTop: target.offset().top
-                 }, 13000);
-              }
-           });
+        $(document).ready(function () {
+            $('a[href^="#"]').on('click', function (event) {
+                var target = $(this.getAttribute('href'));
+                console.log(target); // Debugging line
+                if (target.length) {
+                    event.preventDefault();
+                    $('html, body').stop().animate({
+                        scrollTop: target.offset().top
+                    }, 13000);
+                }
+            });
         });
-        </script>
+    </script>
     <nav>
-        
+
         <a href="index.html"><img src="/img/Logo Studio Louis.svg" alt="logo"></a>
         <ul>
-            <li><a href="Learningoutcomes.html">Learning Outcomes</a></li>
-            <li><a href="Projects.html">Projects</a></li>
-            <li><a href="#Contact">Contact</a></li>
+            <a href="Learningoutcomes.html">
+                <li>Learning Outcomes</li>
+            </a>
+            <a href="Projects.html">
+                <li>Projects</li>
+            </a>
+            <a href="#Contact">
+                <li>Contact</li>
+            </a>
         </ul>
-    </nav>
-    <div class="hero">
-        <div class="containerhero">
-            <h1>Learning Outcomes</h1>
-
-        </div>
-
-    </div>
-
-    <div class="learningoutcomewrapper">
         <script>function openNav() {
                 document.getElementById("mySidenav").style.width = "333px";
             }
@@ -55,6 +51,7 @@
             function closeNav() {
                 document.getElementById("mySidenav").style.width = "0";
             }</script>
+
         <div class="nav-mobile">
             <img src="/img/Logo Studio Louis.svg" alt="logo">
             <img src="/img/hamburgermenu.svg" alt="logo" onclick="openNav()">
@@ -66,20 +63,29 @@
             <a href="Projects.html">Projects</a>
             <a href="#">Contact Me</a>
         </div>
+    </nav>
 
+    <div class="hero">
+        <div class="containerhero">
+            <h1>Learning Outcomes</h1>
+        </div>
+    </div>
 
-        
+    <div class="learningoutcomewrapper">
         <div class="dropdown__box">
             <div class="regular__dropdown">
                 <a href="#interactiveMediaProductsDropdown">
-                    <span>Interactive Media Products</span>
+                    <span>Select Learning Outcome</span>
                     <svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1.21289 1L7.71289 8L14.2129 1" stroke="white" stroke-width="2" />
                     </svg>
                 </a>
-                <div class="dropdown" style="display:none;">
+                <div class="dropdown" style="display: none;">
                     <ul>
-                        <li><a href="#" data-id="Development-and-Version-Control-dropdown">Development and Version Control</a></li>
+                        <li><a href="#interactiveMediaProductsDropdown"
+                                data-id="interactiveMediaProductsDropdown">Interactive Media Products
+                        <li><a href="#" data-id="Development-and-Version-Control-dropdown">Development and Version
+                                Control</a></li>
                         <li><a href="#" data-id="Iterative-Design-dropdown">Iterative Design</a></li>
                         <li><a href="#" data-id="Professional-Standard-dropdown">Professional Standard</a></li>
                         <li><a href="#" data-id="Personal-Leadership-dropdown">Personal Leadership</a></li>
@@ -89,28 +95,39 @@
             </div>
         </div>
 
+        
         <script>
-            document.querySelector('.regular__dropdown > a').addEventListener('click', function (event) {
-                event.preventDefault();
-                var dropdownContent = this.nextElementSibling;
-                if (dropdownContent.style.display === 'none' || dropdownContent.style.display === '') {
-                    dropdownContent.style.display = 'block';
-                    this.classList.add('opened');
-                } else {
-                    dropdownContent.style.display = 'none';
-                    this.classList.remove('opened');
-                }
+            // Selecteer het dropdown element
+            var dropdown = document.querySelector('.regular__dropdown');
+
+            // Voeg event listener toe voor mouseover event
+            dropdown.addEventListener('mouseover', function () {
+                // Selecteer het dropdown menu
+                var dropdownMenu = this.querySelector('.dropdown');
+                // Verander de weergavestijl naar 'block' om het dropdown menu te tonen
+                dropdownMenu.style.display = 'block';
+            });
+
+            // Voeg event listener toe voor mouseout event
+            dropdown.addEventListener('mouseout', function () {
+                // Selecteer het dropdown menu
+                var dropdownMenu = this.querySelector('.dropdown');
+                // Verander de weergavestijl naar 'none' om het dropdown menu te verbergen
+                dropdownMenu.style.display = 'none';
             });
         </script>
 
+        <script> document.querySelectorAll('.dropdown a').forEach(item => { item.addEventListener('click', event => { event.preventDefault(); const id = event.target.getAttribute('data-id'); const element = document.getElementById(id); if (element) { element.scrollIntoView({ behavior: 'smooth' }); } }); }); </script>
+
         <div class="single-learningoutcome" id="interactiveMediaProductsDropdown">
+            <h2>Interactive Media Product</h2>
             <h4>New Marktplaast.nl UI/UX</h4>
             <p>In semester 2 I have made interactive media products that I have made with the program Figma. For
                 example, I made a UI/UX overhaul of Marktplaats.nl</p>
-                <a href="/MarktplaatsUserFeedback.docx" download>
+            <a href="/MarktplaatsUserFeedback.docx" download>
                 <button class="learningoutcomebutton">View Marktplaats.nl UI/UX</button>
             </a>
-                <img src="/img/Marktplaats Homepage Re-design 1.png" alt="Marktplaats.nl UI/UX">
+            <img src="/img/Marktplaats Homepage Re-design 1.png" alt="Marktplaats.nl UI/UX">
             <h4>About the Marktplaats.nl UI/UX overhaul</h4>
             <p>The current Marktplaats UI/UX over the homepage looks old and has a bad UX. After doing research how
                 other websites that sell goods and Marktplaats’ her competitors do, I have concluded a few
@@ -149,6 +166,7 @@
         </div>
 
         <div class="single-learningoutcome" id="Development-and-Version-Control-dropdown">
+            <h2>Development and Version Control</h2>
             <h4>Introduction</h4>
             <p>I am completely new to front-end development, so I have explored HTML, CSS, and JavaScript to develop
                 websites. The first website I coded is the website you are currently viewing. I have learned what each
@@ -196,6 +214,7 @@
 
 
         <div class="single-learningoutcome" id="Iterative-Design-dropdown">
+            <h2>Iterative Design</h2>
             <h4>SoundLab Branding</h4>
             <p>We got asked to create a new brand identity for SoundLab of Fontys. I made various visual works like
                 a new logo design, a brand identity, a new name, and a poster. Each design is iteratively designed
@@ -276,6 +295,7 @@
         </div>
 
         <div class="single-learningoutcome" id="Professional-Standard-dropdown">
+            <h2>Professional Standard</h2>
             <h4>Project Organization</h4>
             <p>To meet deadlines and organize the workflow individually and with my classmates, I made priority lists of
                 things I or we had to do for each project. </p>
@@ -290,6 +310,7 @@
         </div>
 
         <div class="single-learningoutcome" id="Personal-Leadership-dropdown">
+            <h2>Personal Leadership</h2>
             <h4>Feedback from clients, peers and professionals</h4>
             <p>In semester 2 I have worked on 2 different projects. Each had a client which I often had contact with in
                 person or on Teams. If the client has feedback, I wrote this down, so I could take a look at it later. I
@@ -324,10 +345,11 @@
     <div class="containerwrapperblobs">
         <div class="container">
             <div class="contact" id="Contact">
-                <a href="mailto:louisgores@student.fontys.nl"><div class="ButtonContact">
-                   <button style="z-index: 100; cursor: pointer;">louisgores@student.fontys.nl</button>
-                </div>
-            </a>
+                <a href="mailto:louisgores@student.fontys.nl">
+                    <div class="ButtonContact">
+                        <button style="z-index: 100; cursor: pointer;">louisgores@student.fontys.nl</button>
+                    </div>
+                </a>
                 <div class="contacttext">
                     <h1 style="z-index: 100;">Contact Me</h1>
                 </div>
@@ -338,7 +360,7 @@
                 <div class="blob c">c</div>
             </div>
         </div>
-        </div>
+    </div>
 
     </div>
 
