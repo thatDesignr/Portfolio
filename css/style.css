@@ -1093,6 +1093,19 @@ border: none;
   background-position: 92% 50%;
 }
 
+.Downloadbutton:hover{
+  background-color: #e9f0ff;
+  color: #fff;
+  cursor: pointer;
+
+}
+
+.learningoutcomebutton:hover{
+  background-color: #e9f0ff;
+  color: #fff;
+  cursor: pointer;
+}
+
 hr.solid {
   border-top: 1px solid #CCCCCC;
   width: 100%;
