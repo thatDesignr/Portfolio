@@ -1,6 +1,6 @@
 Welcome to my portfolio website! This document will guide you through the structure, setup, and usage of the site. Whether you're interested in viewing my projects, understanding the technologies used, or contributing to the codebase, you'll find all the necessary information here.
 
-##Table of Contents##
+**Table of Contents**
  - Introduction
  - Features
  - Technologies Used
