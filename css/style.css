@@ -272,6 +272,20 @@ nav {
 
 }
 
+.project-title h1 {
+
+}
+
+.project:hover .project-title h1 {
+  content: "You can view this project very soon";
+  visibility: hidden;
+}
+
+.project:hover .project-title h1::before {
+  content: "You can view this project very soon";
+  visibility: visible;
+}
+
 .project button {
   background-color: transparent;
   color: #6C6C6C;
@@ -313,9 +327,14 @@ nav {
   font-size: 0;
   /* Add this */
 
+
+
 }
 
-.ButtonAllProjects button {
+
+
+
+.buttonallprojectsbutton{
   border: 1px solid #EDEDED;
   display: flex;
 
@@ -342,6 +361,12 @@ nav {
   padding-left: 40px;
   margin: 0;
   padding-top: 30px;
+}
+
+.buttonallprojectsbutton:hover{
+  background-color: #F0F0F0;
+  color: #fff;
+
 }
 
 /* hero text animation effect */
@@ -579,6 +604,10 @@ max-height: 800px;
   background-repeat: no-repeat;
   background-position: 95% 50%;
   background-size: 17px 17px;
+}
+
+a {
+  text-decoration: none;
 }
 
 .ButtonContact {
