@@ -276,15 +276,11 @@ nav {
 
 }
 
-.project:hover .project-title h1 {
-  content: "You can view this project very soon";
-  visibility: hidden;
+.project h1 {
+  text-decoration: none !important;
+  color: #000000;
 }
 
-.project:hover .project-title h1::before {
-  content: "You can view this project very soon";
-  visibility: visible;
-}
 
 .project button {
   background-color: transparent;
