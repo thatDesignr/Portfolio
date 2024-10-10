@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Studio Louis - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+        <link rel="icon" href="/img/FaviconStudioLouis.ico" type="image/x-icon">
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            $('a[href^="#"]').on('click', function (event) {
+                var target = $(this.getAttribute('href'));
+                console.log(target); // Debugging line
+                if (target.length) {
+                    event.preventDefault();
+                    $('html, body').stop().animate({
+                        scrollTop: target.offset().top
+                    }, 13000);
+                }
+            });
+        });
+    </script>
+    <nav>
+
+        <a href="index.html"><img src="/img/Logo Studio Louis.svg" alt="logo"></a>
+        <ul>
+            <a href="Learningoutcomes.html">
+                <li>Learning Outcomes</li>
+            </a>
+            <a href="projects.html">
+                <li>Projects</li>
+            </a>
+            <a href="#Contact">
+                <li>Contact</li>
+            </a>
+        </ul>
+        <script>function openNav() {
+                document.getElementById("mySidenav").style.width = "333px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }</script>
+
+        <div class="nav-mobile">
+            <img src="/img/Logo Studio Louis.svg" alt="logo">
+            <img src="/img/hamburgermenu.svg" alt="logo" onclick="openNav()">
+        </div>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="Learningoutcomes.html">Learning Outcomes</a>
+            <a href="projects.html">Projects</a>
+            <a href="#">Contact Me</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="containerhero">
+            <h1>Startweek</h1>
+        </div>
+    </div>
+
+    <div class="learningoutcomewrapper">
+        
+        <div class="single-learningoutcome" id="interactiveMediaProductsDropdown">
+            <h2>Agriculture of the future</h2>
+            <p>For the startweek, the theme was "Future". We got asked to think of how the future of the agriculture would look in the year 2050. We got 3 days the time to think of an idea and to make a prototype; a veritcal farm with 3 layers: underwater, air, and underground. </p>
+            <h4>Pictures of the prototype</h4>
+            <p>We made the prototype out of cardboard and Play-doh. </p>
+            <img src="/img/Frame 1.webp" alt="prototype">
+            <img src="/img/Frame 2.webp" alt="prototype">
+            <img src="/img/Frame 3.webp" alt="prototype">
+            <img src="/img/Frame 4.webp" alt="prototype">
+            <img src="/img/Frame 5.webp" alt="prototype">
+            <img src="/img/Frame 6.webp" alt="prototype">
+            <h4>UI for to manage your farms</h4>
+            <p>Besides a physical prototype, we also made a digital prototype that shows how you could manage your farms all over the world.<br><br></p>
+            <img src="/img/Agriculture of the future.webp" alt="dashboard">
+        </div>
+
+
+       
+        </div>
+    </div>
+    <div class="containerwrapperblobs">
+        <div class="container">
+            <div class="contact" id="Contact">
+                <a href="mailto:louisgores@student.fontys.nl">
+                    <div class="ButtonContact">
+                        <button style="z-index: 100; cursor: pointer;">louisgores@student.fontys.nl</button>
+                    </div>
+                </a>
+                <div class="contacttext">
+                    <h1 style="z-index: 100;">Contact Me</h1>
+                </div>
+            </div>
+            <div class="blobs">
+                <div class="blob a">a</div>
+                <div class="blob b">b</div>
+                <div class="blob c">c</div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+
+    <script src="js/script.js" defer></script>
+</body>
