@@ -13,7 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
-        <link rel="icon" href="/img/FaviconStudioLouis.ico" type="image/x-icon">
+    <link rel="icon" href="/img/FaviconStudioLouis.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -120,40 +120,47 @@
 
         <div class="single-learningoutcome" id="interactiveMediaProductsDropdown">
             <h2>Interactive Media Products</h2>
-            <p>Text</p>
+            <p>I oriented in relevant tech, media and design landscapes, created interactive media products and tested
+                them with users, clients, and other stakeholders</p>
             <h4>Orient</h4>
-            <p>Text</p>
-            <a href="/MarktplaatsUserFeedback.docx" download>
-                <a target="_blank"
-                    href="https://www.figma.com/proto/ssz7hSMccBHXk01tYDGEnN/Marktplaats-Re-design?page-id=0%3A1&node-id=1-9&viewport=-391%2C344%2C0.58&t=VLq5SBYPUsfLsd7t-1&scaling=min-zoom&content-scaling=fixed">
-                    <button class="learningoutcomebutton">View Button</button></a>
-            </a>
+            <p>In project one, I tried out different techniques for the brand identity of the client. In the first style
+                I used a rusty, vintage, American look, in the second style, I used a neon-style.</p>
 
             <h4>Relevant tech, media and design landscape</h4>
-            <p>Text<br><br></p>
-            <a href="downloads/MarktplaatsUserFeedback.docx" download>
-                <button style="margin-bottom: 60px;" class="Downloadbutton">Download Button</button>
-            </a>
+            <p>To make interactive media products I used applications that are modern and widely used by other people in
+                this industry. For digital UI/UX projects I used Figma, for branding I used the Adobe Creative Cloud
+                including Adobe Illustrator and Adobe Photoshop. To get informed what is currently fresh and trendy, I
+                used websites like Pinterest, Dribbble, and Behance. <br></p>
 
             <h4>Interactive Media Products</h4>
-            <p>Text</p>
-            <a href="/MarktplaatsUserFeedback.docx" download>
-                <a target="_blank"
-                    href="https://www.figma.com/proto/ssz7hSMccBHXk01tYDGEnN/Marktplaats-Re-design?page-id=0%3A1&node-id=1-9&viewport=-391%2C344%2C0.58&t=VLq5SBYPUsfLsd7t-1&scaling=min-zoom&content-scaling=fixed">
-                    <button class="learningoutcomebutton">View Button</button></a>
-            </a>
+            <p>Nothing yet.</p>
+
 
             <h4>Tested with users and stakeholders</h4>
-            <p>Text<br><br></p>
-            <a href="downloads/MarktplaatsUserFeedback.docx" download>
-                <button style="margin-bottom: 60px;" class="Downloadbutton">Download Button</button>
-            </a>
+            <p>In project two, which is a project where we improved an existing flow of a health insurer, I tested the
+                flow with users. I let them go through the process, I wrote down what I noticed, asked them questions
+                during the process and after the process. I documented this in the Word Document below.<br></p>
+
+            <button style="width: 280px;" class="Downloadbutton" onclick="downloadFile()">Betur.nl
+                User Tests</button>
+
+            <script>
+                function downloadFile() {
+                    const link = document.createElement('a');
+                    link.href = 'downloads/User Test BETURnl.docx';
+                    link.download = 'User Test BETURnl.docx';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                }
+            </script>
+
         </div>
 
 
         <div class="single-learningoutcome" id="Development-and-Version-Control-dropdown">
             <h2>Development and version control</h2>
-            <p>Text</p>
+            <p>For this learning outcome, I explored front-end development languages</p>
             <h4>Front-end development languages</h4>
             <p>Text</p>
             <a href="/MarktplaatsUserFeedback.docx" download>
@@ -246,8 +253,8 @@
             </a>
         </div>
 
-       
-        </div>
+
+    </div>
     </div>
     <div class="containerwrapperblobs">
         <div class="container">
