@@ -193,7 +193,11 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px 15px 20px;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  background-color: white; /* Ensure the background color is set */
+  z-index: 1000; /* Ensure it stays above other content */
 }
 
 .hero h1 {
@@ -577,18 +581,19 @@ max-height: 800px;
 .contacttext h1 {
   padding: 0px;
   margin: 0px;
-  font-size: 13vw;
+  font-size: 9vw;
 }
 
 .ButtonContact button {
   border: 1px solid #EDEDED;
+  font-size: 25px;
   display: flex;
   padding-right: 30px;
   margin-left: 10px;
   border-radius: 50px;
   text-decoration: none;
-  height: 44px;
-  width: 300px;
+  height: 66px;
+  width: 500px;
   justify-content: center;
   align-items: center;
   text-align: right;
