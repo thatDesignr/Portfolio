@@ -1095,7 +1095,8 @@ border: none;
   .dropdown__box {
     position: sticky !important;
     top: 0 !important;
-    padding-top: 50px;
+    padding-top: 27px;
+    z-index: 10000;
   }
 }
 
