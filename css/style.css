@@ -198,6 +198,11 @@ nav {
   top: 0;
   background-color: white; /* Ensure the background color is set */
   z-index: 1000; /* Ensure it stays above other content */
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+nav.scrolled {
+  box-shadow: 0 4px 44px rgba(0, 0, 0, 0.05);
 }
 
 .hero h1 {
