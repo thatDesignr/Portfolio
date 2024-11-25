@@ -1231,11 +1231,46 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("../img/HeroImageZekur.webp");
+  background-image: url("../img/userpexperiencebg.webp");
   height: 100vh;
   background-size: cover;
   background-position: center;
 }
+
+.hero-image-section-branding{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/brandingbgimage.webp");
+  height: 100vh;
+  background-size: 100%;
+  background-position: 10% 55%;
+}
+
+.hero-image-section-development{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/bgimagedevelopment\ \(2\).webp");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-image-section-portfolio{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/bgdevelopment\ \(1\).webp");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+
 
 .next-project-button {
   position: fixed;

@@ -125,8 +125,24 @@
     </div>
 
     </div>
+    <div class="next-project-button">
+        <a href="branding.html">
+            <button class="next-project-button-button">Next Project</button>
+        </a>
+    </div>
+    
+    <div class="next-project-button-left">
+        <a href="Portfolio.html">
+            <button class="next-project-button-button-left">Previous Project</button>
+        </a>
+    </div>
 
-
+    <script>
+        window.addEventListener('scroll', function() {
+            document.querySelector('.next-project-button').classList.add('visible');
+            document.querySelector('.next-project-button-left').classList.add('visible');
+        });
+    </script>
 
     <script src="js/script.js" defer></script>
 </body>
