@@ -1366,3 +1366,11 @@ transition: transform 1s ease;
 .visible {
   transform: translateX(0);
 }
+
+video{
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border-radius: 16px;
+  margin-top: 20px;
+}
